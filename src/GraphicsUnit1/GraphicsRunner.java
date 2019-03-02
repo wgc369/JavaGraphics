@@ -3,10 +3,10 @@ package GraphicsUnit1;
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
-//Name -
-//Date -
-//Class -
-//Lab  -
+//Name - Gary Wu
+//Date - 3/1/2019
+//Class - 1
+//Lab  - 2,3,4,5
 
 import javax.swing.JFrame;
 
@@ -22,10 +22,11 @@ public class GraphicsRunner extends JFrame
 		setSize(WIDTH,HEIGHT);
 
 		//getContentPane().add(new SmileyFace());
+                //getContentPane().add(new SmileyFace());
+                //getContentPane().add(new BigHouse());
+                //getContentPane().add(new Robot());
+                getContentPane().add(new ShapePanel());
 		
-		//add other classes to run them 
-		//BigHouse, Robot, or ShapePanel 
-                getContentPane().add(new BigHouse());
                 
 		setVisible(true);
 

@@ -24,19 +24,26 @@ public class Shape
    {
 		xPos = x;
 		//finish this constructor
+                yPos = y;
+                width = wid;
+                height = ht;
+                color = col;
+                
    }
 
 
    public void draw(Graphics window)
    {
       window.setColor(color);
-      window.fillRect(xPos, yPos, width, height);
+      //window.fillRect(xPos, yPos, width, height);
 
       //draw whatever you want
       //    ^
       //  [ :: ]
       //    ()
-
+      window.drawRect(xPos, yPos, width, height);
+      window.drawLine(xPos, yPos, xPos*2, yPos*2);
+      window.drawLine(xPos*2, yPos, xPos, yPos*2);
    }
 
    //BONUS
