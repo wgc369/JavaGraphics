@@ -21,10 +21,36 @@ public class GraphicsRunner extends JFrame
 
 		setSize(WIDTH,HEIGHT);
 
-		//getContentPane().add(new SmileyFace());
-                //getContentPane().add(new SmileyFace());
-                //getContentPane().add(new BigHouse());
-                //getContentPane().add(new Robot());
+		getContentPane().add(new SmileyFace());
+		
+                run3 run3 = new run3();
+                run4 run4 = new run4();
+                run5 run5 = new run5();
+                
+		setVisible(true);
+
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+	public static void main( String args[] )
+	{
+		GraphicsRunner run = new GraphicsRunner();
+	}
+}
+
+class run3 extends JFrame
+{
+	private static final int WIDTH = 800;
+	private static final int HEIGHT = 600;
+
+	public run3()
+	{
+		super("run3");
+
+		setSize(WIDTH,HEIGHT);
+
+                getContentPane().add(new BigHouse());
+                getContentPane().add(new Robot());
                 getContentPane().add(new ShapePanel());
 		
                 
@@ -35,6 +61,57 @@ public class GraphicsRunner extends JFrame
 
 	public static void main( String args[] )
 	{
-		GraphicsRunner run = new GraphicsRunner();
+		run3 run = new run3();
+	}
+}
+
+class run4 extends JFrame
+{
+	private static final int WIDTH = 800;
+	private static final int HEIGHT = 600;
+
+	public run4()
+	{
+		super("run4");
+
+		setSize(WIDTH,HEIGHT);
+
+                getContentPane().add(new Robot());
+                getContentPane().add(new ShapePanel());
+		
+                
+		setVisible(true);
+
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+	public static void main( String args[] )
+	{
+		run4 run = new run4();
+	}
+}
+
+class run5 extends JFrame
+{
+	private static final int WIDTH = 800;
+	private static final int HEIGHT = 600;
+
+	public run5()
+	{
+		super("run5");
+
+		setSize(WIDTH,HEIGHT);
+
+                getContentPane().add(new ShapePanel());
+		
+                
+		setVisible(true);
+
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+	public static void main( String args[] )
+	{
+		run5 run = new run5();
 	}
 }
